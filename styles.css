@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500;600;700&display=swap');
 
 :root {
-    --background: #EBEDED;
-    --text: #E83C38;
+    --background: #f1fffa;
+    --text: #3C4F76;
 }
 
 html,
@@ -61,6 +61,13 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+}
+
+#logosvg,
+#arrow,
+.threeballs,
+#ball1 {
+    fill: var(--text);
 }
 
 ul {
@@ -231,6 +238,7 @@ p {
 }
 
 .herosection3 {
+    box-sizing: border-box;
     display: flex;
     width: 100%;
     height: 13rem;
@@ -240,6 +248,7 @@ p {
 }
 
 .herosection4 {
+    box-sizing: border-box;
     display: flex;
     height: 4.5rem;
     justify-content: space-between;
@@ -277,7 +286,6 @@ p {
     width: 100%;
     height: 100%;
     white-space: nowrap;
-    transition: all 1s ease;
 }
 
 .m-scroll__title>div {
@@ -293,7 +301,6 @@ p {
     font-size: 9rem;
     font-family: 'MuseoModerno', cursive;
     color: var(--text);
-    transition: all 2s ease;
 }
 
 .m-scroll-element {
@@ -336,7 +343,7 @@ p {
 
 /* END of the HERO ---------------------------------------------------------------------------------*/
 
-/* Start of the MAIN -------------------------------------------------------------------------------*/
+/* Start of the SERVICES -------------------------------------------------------------------------------*/
 h2 {
     font-size: 1.3rem;
     font-weight: lighter;
@@ -351,8 +358,10 @@ h3 {
 }
 
 .services {
+    box-sizing: border-box;
     padding: 3.5rem 0 3.5rem 10%;
     overflow: hidden;
+    border-bottom: solid calc(1rem / 10) var(--text);
 }
 
 .serviceswrapper {
@@ -381,7 +390,7 @@ h3 {
 .serviceswrapper div {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    min-width: 30rem;
+    min-width: 35.5%;
     box-sizing: border-box;
     border-bottom: solid calc(1rem / 10) var(--text);
 }
@@ -390,11 +399,55 @@ h3 {
     width: 100%;
 }
 
-/* END of the MAIN --------------------------------------------------------------------------------*/
+/* END of the SERVICES --------------------------------------------------------------------------------*/
+
+/* START of the ABOUT --------------------------------------------------------------------------------*/
+
+.about {
+    box-sizing: border-box;
+    padding-left: 10%;
+    width: 90%;
+    border-bottom: solid calc(1rem / 10) var(--text);
+    display: flex;
+}
+
+.about img {
+    width: 40%;
+    height: 100%;
+}
+
+.aboutright {
+    padding: 3.5rem 0 3.5rem 4rem;
+}
+
+.aboutright p {
+    max-width: 85%;
+}
+
+.aboutright button:nth-child(1) {
+    background-color: var(--text);
+    border-radius: 0px;
+    border: none;
+    color: var(--background);
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.ctas {
+    margin-top: 8%;
+}
+
+/* END of the ABOUT --------------------------------------------------------------------------------*/
 
 
 @media (max-width: 1100px) {
 
+    .aboutright p {
+        max-width: 100%;
+    }
 
     .secondparagraph {
         width: 60%;

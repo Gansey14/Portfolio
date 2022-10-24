@@ -5,6 +5,11 @@ const linewrapper = document.querySelector("#linewrapper");
 const ullist = document.querySelector(".ullist");
 const ball1 = document.querySelector("#ball1");
 const html = document.querySelector("html");
+const textColorVariable = "--text";
+const backgroundColorVariable = "--background";
+
+const backgroundColors = ["#EBEDED", "#f1fffa", "#282B29", "#F4C4C4"]
+const textColors = ["#E83C38", "#3C4F76", "#F4C4C4", "#282B29"]
 
 menu2.onclick = function () {
     menu2.classList.toggle("openmenu2");
@@ -15,9 +20,23 @@ menu2.onclick = function () {
     html.classList.toggle("noscrollburger");
 }
 
+let number = 1;
 
-// if (100 === 100) {
-//     linewrapper.style.backgroundColor = "black";
-// }
+html.addEventListener("click", _ => {
+    if (number < 3) {
+        number += 1;
+    } else (
+        number = number - 3
+    )
+    console.log(number);
+    document.documentElement.style.setProperty(backgroundColorVariable, backgroundColors[number]);
+    document.documentElement.style.setProperty(textColorVariable, textColors[number]);
+})
+
+
+
+
+
+
 
 
