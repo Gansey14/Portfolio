@@ -169,7 +169,7 @@ body.blurred {
     border-bottom: solid calc(1rem / 10) var(--text);
 }
 
-video {
+.herosection1 img {
     border-radius: 200px;
     width: 8rem;
     height: 8rem;
@@ -237,6 +237,12 @@ i {
     align-items: center;
     border-bottom: solid calc(1rem / 10) var(--text);
     gap: 5rem;
+}
+
+.ctas a,
+.services a {
+    text-decoration: none;
+    color: var(--text);
 }
 
 .herosection2 .ctas {
@@ -410,6 +416,7 @@ h4 {
     border-bottom: solid calc(1rem / 10) var(--text);
 }
 
+
 .serviceswrapper {
     display: flex;
     gap: 4rem;
@@ -433,6 +440,20 @@ h4 {
 .serviceswrapper img {
     width: 100%;
 }
+
+.livePreview {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--background);
+    color: var(--text);
+    border-radius: 0px;
+    border: none;
+    font-size: 0.8rem;
+    padding: 1rem 3px;
+    cursor: pointer;
+}
+
+
 
 /* END of the SERVICES --------------------------------------------------------------------------------*/
 
@@ -524,7 +545,7 @@ h4 {
 }
 
 .detail {
-    padding: 3.5rem 10%;
+    padding: 3.5rem 5% 3.5rem 10%;
     gap: 2rem;
     flex-direction: row;
     flex-wrap: wrap;

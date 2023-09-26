@@ -88,7 +88,27 @@ moreButton.addEventListener('click', () => {
 });
 
 
+// changing title when user switches tabs
 
+// Check if the Page Visibility API is supported by the browser
+if (document.visibilityState !== undefined) {
+    // Add an event listener to detect visibility changes
+    document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+            // Change the tab text when the user switches to another tab
+            document.title = "The Coolest Portfolio <--";
+        } else {
+            // Restore the original tab text when the user returns
+            document.title = "Samuel Hloušek";
+        }
+    });
+}
+
+// Opening resume as pdf file on external window
+
+function openPDF() {
+    window.open('./Documents/Resumé - Samuel Hloušek.pdf', '_blank');
+}
 
 
 
