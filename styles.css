@@ -411,7 +411,7 @@ h4 {
 
 .services {
     box-sizing: border-box;
-    padding: 3.5rem 0 3.5rem 10%;
+    padding: 3.5rem 10% 3.5rem 10%;
     overflow: hidden;
     border-bottom: solid calc(1rem / 10) var(--text);
 }
