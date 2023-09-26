@@ -1,2 +1,2 @@
-# Gansey-s-Digital
+# Samuel Hloušek
 Main portfolio
