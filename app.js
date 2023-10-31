@@ -107,7 +107,7 @@ if (document.visibilityState !== undefined) {
 // Opening resume as pdf file on external window
 
 function openPDF() {
-    window.open('./Documents/Resumé - Samuel Hloušek.pdf', '_blank');
+    window.open('./Documents/Resumé - Samuel Hlousek.pdf', '_blank');
 }
 
 
