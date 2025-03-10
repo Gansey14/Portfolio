@@ -67,7 +67,7 @@ body.blurred {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 
 #logosvg,
