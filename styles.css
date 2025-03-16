@@ -410,12 +410,21 @@ h4 {
 }
 
 .services {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
     box-sizing: border-box;
     padding: 3.5rem 10% 3.5rem 10%;
     overflow: hidden;
     border-bottom: solid calc(1rem / 10) var(--text);
 }
 
+
+.serviceswrapper-top {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
 .serviceswrapper {
     display: flex;
